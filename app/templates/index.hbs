@@ -1,0 +1,10 @@
+<button onclick={{action "deletePost" model}}>Delete</button>
+
+<p>Post Body: {{model.body}}</p>
+<p>Author: {{model.author.name}}</p>
+
+<ul>
+  {{#each model.comments as |comment|}}
+    <li>{{comment.body}}</li>
+  {{/each}}
+</ul>
